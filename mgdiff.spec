@@ -10,7 +10,7 @@ Source0:	mgdiff-1.0.tar.gz
 Source1:	mgdiff.desktop
 Patch0:		mgdiff-misc.patch
 Patch1:		mgdiff-readme.patch
-BuildRequires:	lesstif-devel
+BuildRequires:	motif-devel
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
