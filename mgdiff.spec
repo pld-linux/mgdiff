@@ -31,12 +31,12 @@ Mgdiff jest graficzn± nak³adk± dla polecenia diff.
 
 %build
 xmkmf -a
-make CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
-make install install.man \
+%{__make} install install.man \
 	DESTDIR=$RPM_BUILD_ROOT \
 	MANDIR=%{_mandir}/man1 \
 	XAPPLOADDIR=%{_libdir}/X11/app-defaults \
