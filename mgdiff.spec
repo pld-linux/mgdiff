@@ -12,7 +12,6 @@ Patch0:		mgdiff-misc.patch
 Patch1:		mgdiff-readme.patch
 BuildRequires:	motif-devel
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
