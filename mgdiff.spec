@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	da896496dcb9ef2947496472f094b65f
 #Source0:	ftp://ftp.x.org/contrib/applications/%{name}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-misc.patch
