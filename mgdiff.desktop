@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=mgdiff
 Comment=Graphical file difference browser
-Comment[pl]=Graficzna przegl±darka ró¿nic pomiêdzy plikami
+Comment[pl]=Graficzna przeglÄ…darka rÃ³Å¼nic pomiÄ™dzy plikami
 Exec=mgdiff
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
