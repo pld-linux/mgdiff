@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=mgdiff
+Name=Mgdiff
 Comment=Graphical file difference browser
 Comment[pl]=Graficzna przeglądarka różnic pomiędzy plikami
 Exec=mgdiff
