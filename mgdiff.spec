@@ -3,13 +3,14 @@ Summary(pl):	Mgdiff - graficzna nak³adka dla diff
 Name:		mgdiff
 Version:	1.0
 Release:	2
-Copyright:	GPL
-Group:		X11/Utilities
-Group(pl):	X11/Narzêdzia
-Source0:	mgdiff-1.0.tar.gz
-Source1:	mgdiff.desktop
-Patch0:		mgdiff-misc.patch
-Patch1:		mgdiff-readme.patch
+License:	GPL
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(pl):	X11/Aplikacje
+Source0:	%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
+Patch0:		%{name}-misc.patch
+Patch1:		%{name}-readme.patch
 BuildRequires:	motif-devel
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Mgdiff is a graphical front end to the diff command.
 
 %description -l pl
-Mgdiff jest graficzn± nak³adk± dla polecenia diff. 
+Mgdiff jest graficzn± nak³adk± dla polecenia diff.
 
 %prep
 %setup -q -n mgdiff
@@ -30,7 +31,7 @@ Mgdiff jest graficzn± nak³adk± dla polecenia diff.
 
 %build
 xmkmf -a
-%{__make} CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -43,8 +44,7 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	README
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
