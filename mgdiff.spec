@@ -8,6 +8,7 @@ Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	%{name}-%{version}.tar.gz
+#Source0:	ftp://ftp.x.org/contrib/applications/%{name}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-misc.patch
 Patch1:		%{name}-readme.patch
