@@ -2,7 +2,7 @@ Summary:	Mgdiff - graphical front end to the diff
 Summary(pl):	Mgdiff - graficzna nak³adka dla diff
 Name:		mgdiff
 Version:	1.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
