@@ -1,3 +1,4 @@
+
 Summary:	Mgdiff - graphical front end to the diff
 Summary(pl):	Mgdiff - graficzna nak³adka dla diff
 Name:		mgdiff
@@ -11,8 +12,8 @@ Source0:	%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-misc.patch
 Patch1:		%{name}-readme.patch
-BuildRequires:	motif-devel
 BuildRequires:	XFree86-devel
+BuildRequires:	motif-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
@@ -33,14 +34,14 @@ xmkmf -a
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 %{__make} install install.man \
 	DESTDIR=$RPM_BUILD_ROOT \
 	MANDIR=%{_mandir}/man1 \
 	XAPPLOADDIR=%{_libdir}/X11/app-defaults \
 	BINDIR=%{_bindir}
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,6 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %attr(755,root,root) %{_bindir}/mgdiff
 %config %{_libdir}/X11/app-defaults/Mgdiff
-
 %{_mandir}/man1/*
-%{_applnkdir}/Utilities/mgdiff.desktop
+%{_desktopdir}/mgdiff.desktop
