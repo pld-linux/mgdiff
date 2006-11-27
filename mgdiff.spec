@@ -1,4 +1,3 @@
-
 Summary:	Mgdiff - graphical front end to the diff
 Summary(pl):	Mgdiff - graficzna nak³adka dla diff
 Name:		mgdiff
