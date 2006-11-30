@@ -6,4 +6,5 @@ Exec=mgdiff
 Terminal=false
 Type=Application
 Encoding=UTF-8
+Categories=Utility;
 # vi: encoding=utf-8
