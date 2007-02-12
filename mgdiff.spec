@@ -1,5 +1,5 @@
 Summary:	Mgdiff - graphical front end to the diff
-Summary(pl):	Mgdiff - graficzna nak³adka dla diff
+Summary(pl.UTF-8):   Mgdiff - graficzna nakÅ‚adka dla diff
 Name:		mgdiff
 Version:	1.0
 Release:	3
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Mgdiff is a graphical front end to the diff command.
 
-%description -l pl
-Mgdiff jest graficzn± nak³adk± dla polecenia diff.
+%description -l pl.UTF-8
+Mgdiff jest graficznÄ… nakÅ‚adkÄ… dla polecenia diff.
 
 %prep
 %setup -q -n mgdiff
