@@ -1,5 +1,5 @@
 Summary:	Mgdiff - graphical front end to the diff
-Summary(pl.UTF-8):   Mgdiff - graficzna nakładka dla diff
+Summary(pl.UTF-8):	Mgdiff - graficzna nakładka dla diff
 Name:		mgdiff
 Version:	1.0
 Release:	3
