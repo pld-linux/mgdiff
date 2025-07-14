@@ -24,8 +24,8 @@ Mgdiff jest graficzną nakładką dla polecenia diff.
 
 %prep
 %setup -q -n mgdiff
-%patch0 -p0
-%patch1 -p1
+%patch -P0 -p0
+%patch -P1 -p1
 
 %build
 xmkmf -a
